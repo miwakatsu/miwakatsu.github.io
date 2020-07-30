@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/kadai.css"/>
+    <title>お問い合わせフォーム</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>お問い合わせフォーム</h1>
+
+        <div>
+            <h2>お問い合わせ</h2>
+
+            <p>感想・ご意見をお聞かせください。</p>
+            <form action="mail.php" method="get" autocomplete="on">
+                <p>
+                    <label for="last-name">姓：</label>
+                    <input type="text" name="lastname" id="last-name" placeholder="姓" required />
+                    <label>
+                        名：
+                        <input type=text name="firstname" placeholder="名"/>
+                    </label>
+                </p>
+
+                <p>
+                    <label><input type="radio" name="seibetsu" 　value="female" />女性</label>
+                    <label><input type="radio" name="seibetsu" value="male" />男性</label>
+                    <label><input type="radio" name="seibetsu" value="other" />その他</label>
+                </p>
+
+                <p>
+                    <label for="birthday">誕生日：</label>
+                    <input type="date" />
+                </p>
+
+                <p>
+                    <label>
+                        好きな色：
+                        <input type="color" />
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        電話番号：
+                        <input type="tel" />
+                    </label>
+                </p>
+                
+                <p>
+                    <label>
+                        メールアドレス：
+                        <input type="email" />
+                    </label>
+                </p>
+                
+                <p>
+                    <label>観劇の頻度：
+                    <select name="frequency">
+                        <option value="once-a-year">1年に1回かそれ未満</option>
+                        <option value="twice-a-year">1年に2回</option>
+                        <option value="three-times-a-year">1年に3回</option>
+                        <option value="more-than-four-times-a-year">1年に4回以上</option>
+                    </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="requests">感想・要望：</label>
+                    <textarea id="requests" name="requests" rows="8" cols="60"></textarea>
+                </p>
+                <p>
+                    <label>
+                        ファイル：
+                        <input type="file" />
+                    </label>
+                </p>
+                
+                <p>
+                    <input type="checkbox" name="agreement" id="agreement" checked />
+                    <label for="agreement">プライバシーポリシーに同意する</label>
+                </p>
+
+                <p>
+                    <input type=submit value="送信する" />
+                    <input type="reset" value="リセット" />
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
